@@ -1,9 +1,14 @@
 {
+    "filesGlob": [
+      "src/**/*.ts",
+      "!./node_modules/**/*.ts"
+    ],
     "files": [
         "src/backend/main.ts"
     ],
     "compilerOptions": {
-        "noImplicitAny": true,
-        "target": "ES6"
+        "noImplicitAny": false,
+        "target": "es5",
+        "sourceMap": false
     }
 }
