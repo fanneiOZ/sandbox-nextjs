@@ -1,14 +1,16 @@
 {
-    "filesGlob": [
-      "src/**/*.ts",
-      "!./node_modules/**/*.ts"
-    ],
-    "files": [
-        "src/backend/main.ts"
-    ],
     "compilerOptions": {
-        "noImplicitAny": false,
-        "target": "es5",
-        "sourceMap": false
-    }
+        "noImplicitAny": true,
+        "removeComments": true,
+        "target": "es2019",
+        "types": [
+            "node"
+        ]
+    },
+    "include": [
+        "src/**/*.ts",      
+    ],
+    "exclude": [
+        "./node_modules/**/*.ts"
+    ]  
 }

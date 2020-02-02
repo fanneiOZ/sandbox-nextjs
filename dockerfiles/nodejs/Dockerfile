@@ -4,7 +4,8 @@ RUN apk update \
     && apk add \
     sudo \
     git \
-    bash
+    bash \
+    make
 
 RUN adduser \
     --shell /bin/bash \
